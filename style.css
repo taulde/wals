@@ -1,0 +1,110 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 1050px){
+    .logo[data-lg]{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 720px){
+    .logo[data-lg]{
+        margin-top: 50px;
+    }
+
+    .lessons[data-ls]{
+        margin-top: 50px;
+    }
+
+    .timetable[data-tb]{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 460px){
+    .timetable__title[data-timep], .timetable__subtitle[data-timea]{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 390px){
+    .timetable__title[data-timep], .timetable__subtitle[data-timea]{
+        font-size: 23px;
+    }
+}
+
+body{
+    background: #2F2F2F;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.lessons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+    margin-top: 93px;
+    padding-inline: 155px;
+}
+
+.logo{
+    width: 430px;
+    margin-top: 250px;
+    font-size: 35px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    text-align: center;
+    color: #0368FF;
+    font-weight: 900;
+}
+
+
+
+.lesson{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 25px;
+    background: #FBFBFB;
+}
+
+.lesson__title{
+    text-decoration: none;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+}
+
+.timetable{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.timetable__title, .timetable__subtitle{
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+    font-size: 30px;
+    font-family: "Encode Sans Expanded", sans-serif;
+    font-weight: 500px;
+    color: #AEA7A7;
+}
+
+.timetable__subtitle{
+    color: #0044FF;
+}
