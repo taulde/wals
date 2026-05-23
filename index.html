@@ -13,27 +13,26 @@
    <header>
         <a data-lg href="/" class="logo">What about lessons?</a>
    </header>
-
    <div class="content">
     <div data-ls class="lessons">
-        <div class="lesson">
-        <a class="lesson__title" href="https://docs.google.com/spreadsheets/d/19iaCrvmTUjUjjkYqaOqoV_aFo2_cqRQOt-8d48YVUSM/edit?usp=sharing">ОАП</a>
-        </div>
-        <div class="lesson">
-            <a class="lesson__title" href="https://docs.google.com/spreadsheets/d/1N_d-iy3EtzM0oYz1xjKwvV64ob-fzGdMkOU32lY7rTU/edit?gid=0#gid=0 ">ИТ</a>
-        </div>
-        <div class="lesson">
-            <a class="lesson__title" href="https://docs.google.com/spreadsheets/d/1HxhebF2rJffdIZpvA99flgmsz_C4V6ma/edit?usp=drive_link&ouid=108020577343891577171&rtpof=true&sd=true">КС</a>
-        </div>
-        <div class="lesson">
-            <a class="lesson__title" href="https://docs.google.com/spreadsheets/d/1zYnwUj3puqc9bMG7wt5IfPddreOcukXF4pOqSr1Qf1I/edit?gid=820758426#gid=820758426">ЦК</a>
-        </div>
+        <button class="lesson" type="button" onclick="openOAP()">
+            ОАП
+        </button>
+        <button class="lesson" id="kit" type="button" onclick="openIT()">
+            ИТ
+        </button>
+        <button class="lesson" id="cs" type="button" onclick="openCS()">
+            КС
+        </button>
+        <button class="lesson" id="ck" type="button" onclick="openCK()">
+            ЦК
+        </button>
     </div>
-    
     <div data-tb class="timetable">
         <p data-timep class="timetable__title">ищешь расписание, жми</p>&nbsp;
         <a data-timea class="timetable__subtitle" href="https://polytech-shedule.ru/">сюда</a> 
     </div>
    </div>
+   <script src="js/links.js"></script>
 </body>
 </html>
