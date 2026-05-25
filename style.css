@@ -3,9 +3,25 @@
     margin: 0px;
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1250px){
     .logo[data-lg]{
         margin-top: 100px;
+    }
+
+    .timetable[data-tb]{
+        margin-top: 150px;
+    }
+
+    .meme-mode-btn[data-meme]{
+        margin-top: 510px;
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 770px){
+    .meme-mode-btn[data-meme]{
+        margin-left: 10%;
+        width: 90px;
     }
 }
 
@@ -23,9 +39,24 @@
     }
 }
 
+@media (max-width: 710px){
+    .timetable[data-tb]{
+        margin-bottom: 70px;
+    }
+    .meme-mode-btn[data-meme]{
+        width: 50px;
+        height: 40px;
+        margin-top: 630px;
+    }
+}
+
 @media (max-width: 460px){
     .timetable__title[data-timep], .timetable__subtitle[data-timea]{
         font-size: 25px;
+    }
+
+    .logo[data-lg]{
+        margin-top: 10px;
     }
 }
 
@@ -69,11 +100,12 @@ header{
 
 
 
-.lesson{
+.lesson, .meme-mode-btn{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px;
+    min-width: 62px;
     height: 100px;
     border: 3px solid black;
     border-radius: 25px;
@@ -108,8 +140,6 @@ header{
 
 .timetable__title, .timetable__subtitle{
     text-align: center;
-    /* display: flex;
-    justify-content: center; */
     font-size: 30px;
     font-family: "Encode Sans Expanded", sans-serif;
     font-weight: 500px;
@@ -118,4 +148,15 @@ header{
 
 .timetable__subtitle{
     color: #0044FF;
+}
+
+.meme-mode-btn{
+    position: absolute;
+    width: 100px;
+    border-radius: 15px;
+    margin-top: 420px;
+    margin-left: 25%;
+    height: 50px;
+    z-index: +999;
+    background: #FE5555;
 }
