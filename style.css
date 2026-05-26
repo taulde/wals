@@ -13,14 +13,21 @@
     }
 
     .meme-mode-btn[data-meme]{
-        margin-top: 510px;
+        margin-top: 400px;
         margin-left: 20%;
+    }
+}
+
+@media (max-width: 1100px){
+    .meme-mode-btn[data-meme]{
+        margin-top: 510px;
     }
 }
 
 @media (max-width: 770px){
     .meme-mode-btn[data-meme]{
         margin-left: 10%;
+        margin-top: 510px;
         width: 90px;
     }
 }
@@ -62,7 +69,11 @@
 
 @media (max-width: 390px){
     .timetable__title[data-timep], .timetable__subtitle[data-timea]{
-        font-size: 23px;
+        font-size: 20px;
+    }
+
+    .meme-mode-btn[data-meme]{
+        font-size: 20px;
     }
 }
 
@@ -159,4 +170,10 @@ header{
     height: 50px;
     z-index: +999;
     background: #FE5555;
+    opacity: 0;
+}
+
+.meme-mode-btn:hover{
+    transition: 0.5s;
+    opacity: 100;
 }
