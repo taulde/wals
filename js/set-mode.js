@@ -15,7 +15,10 @@ const memeModeBtn = document.getElementById('meme-mode-btn');
 const textLogo = document.getElementById('logo');
 const originalTextLogo = textLogo.textContent;
 
-const getMode = localStorage.getItem("mode");
+const mode = localStorage.getItem("mode");
+    if (mode){
+        document.documentElement.classList.add('meme-mode')
+    }
 
 memeModeBtn.addEventListener('click', function(){
     document.documentElement.classList.toggle("meme")
@@ -35,7 +38,7 @@ memeModeBtn.addEventListener('click', function(){
             textElement.textContent = originalText;
         }) 
 
-            // КИТ
+        // КИТ
         textElementThree.addEventListener('mouseenter', () =>{
             textElementThree.textContent = originalTextThree;
         })
@@ -85,7 +88,7 @@ memeModeBtn.addEventListener('click', function(){
     }    
 })
 
-if (getMode === ""){
+if (mode === ""){
     textLogo.textContent = originalTextLogo;
     // КС 2
     textElement.addEventListener('mouseenter', () =>{
@@ -142,3 +145,5 @@ if (getMode === ""){
         textElementTwo.textContent = originalTextTwo;
      })
 }
+
+// // Пофиксить баг, что при запуске активируется режим meme хотя должен быть стандартный
