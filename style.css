@@ -160,3 +160,20 @@ header{
 .timetable__subtitle{
     color: #0044FF;
 }
+
+.meme-mode-btn{
+    position: absolute;
+    width: 100px;
+    border-radius: 15px;
+    margin-top: 420px;
+    margin-left: 25%;
+    height: 50px;
+    z-index: +999;
+    background: #FE5555;
+    opacity: 0;
+}
+
+.meme-mode-btn:hover{
+    transition: 0.5s;
+    opacity: 100;
+}
