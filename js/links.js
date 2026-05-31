@@ -7,7 +7,7 @@ let openIT = () => {
 }
 
 let openCS = () => {
-    window.open('https://docs.google.com/spreadsheets/d/1HxhebF2rJffdIZpvA99flgmsz_C4V6ma/edit?usp=drive_link&ouid=108020577343891577171&rtpof=true&sd=true');
+    window.open('https://docs.google.com/spreadsheets/d/1HxhebF2rJffdIZpvA99flgmsz_C4V6ma/edit?gid=356876617#gid=356876617');
 }
 
 let openCK = () => {
