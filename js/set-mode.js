@@ -17,7 +17,7 @@ const originalTextLogo = textLogo.textContent;
 
 const mode = localStorage.getItem("mode");
     if (mode){
-        document.documentElement.classList.add('meme-mode')
+        document.documentElement.classList.add('meme')
     }
 
 memeModeBtn.addEventListener('click', function(){

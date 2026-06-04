@@ -78,6 +78,7 @@
 }
 
 body{
+    transition: 0.3s;
     background: #2F2F2F;
 }
 
