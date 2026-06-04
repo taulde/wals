@@ -13,5 +13,3 @@ let openCS = () => {
 let openCK = () => {
     window.open('https://docs.google.com/spreadsheets/d/1zYnwUj3puqc9bMG7wt5IfPddreOcukXF4pOqSr1Qf1I/edit?gid=820758426#gid=820758426');
 }
-
-// тут коментарий
