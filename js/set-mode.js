@@ -88,8 +88,36 @@ memeModeBtn.addEventListener('click', function(){
     }    
 })
 
-if (mode === ""){
-    textLogo.textContent = originalTextLogo;
+if (mode === "meme"){
+    textLogo.textContent = "What about mems?";
+    // КС 2
+    textElement.addEventListener('mouseenter', () =>{
+        textElement.textContent = "КС 2";
+    })
+
+    textElement.addEventListener('mouseleave', () => {
+        textElement.textContent = originalText;
+    }) 
+
+    // КИТ
+    textElementThree.addEventListener('mouseenter', () =>{
+        textElementThree.textContent = "КИТ";
+    })
+
+    textElementThree.addEventListener('mouseleave', () => {
+        textElementThree.textContent = originalTextThree;
+    }) 
+
+    // ТЦК
+    textElementTwo.addEventListener('mouseenter', () =>{
+        textElementTwo.textContent = "НЕ ТЦК";
+    })
+} else {
+    textElementTwo.addEventListener('mouseleave', () => {
+        textElementTwo.textContent = originalTextTwo;
+     })
+
+     textLogo.textContent = originalTextLogo;
     // КС 2
     textElement.addEventListener('mouseenter', () =>{
     textElement.textContent = originalText;
@@ -116,34 +144,4 @@ if (mode === ""){
     textElementTwo.addEventListener('mouseleave', () => {
         textElementTwo.textContent = originalTextTwo;
     })
-} else {
-    textLogo.textContent = "What about mems?";
-    // КС 2
-    textElement.addEventListener('mouseenter', () =>{
-        textElement.textContent = "КС 2";
-    })
-
-    textElement.addEventListener('mouseleave', () => {
-        textElement.textContent = originalText;
-    }) 
-
-    // КИТ
-    textElementThree.addEventListener('mouseenter', () =>{
-        textElementThree.textContent = "КИТ";
-    })
-
-    textElementThree.addEventListener('mouseleave', () => {
-        textElementThree.textContent = originalTextThree;
-    }) 
-
-    // ТЦК
-    textElementTwo.addEventListener('mouseenter', () =>{
-        textElementTwo.textContent = "НЕ ТЦК";
-    })
-
-    textElementTwo.addEventListener('mouseleave', () => {
-        textElementTwo.textContent = originalTextTwo;
-     })
 }
-
-// // Пофиксить баг, что при запуске активируется режим meme хотя должен быть стандартный
