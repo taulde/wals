@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/meme.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -12,31 +13,32 @@
 </head>
 <body>
    <header>
-        <a data-lg href="#" class="logo" id="logo">What about lessons?</a>
+        <a data-logo href="#" class="logo" id="logo">What about lessons?</a>
    </header>
-   <button type="button" data-meme id="meme-mode-btn" class="meme-mode-btn">
-        67 
-   </button>
 
    <div class="content">
-    <div data-ls class="lessons">
-        <button class="lesson" type="button" onclick="openOAP()">
+    <div data-lessons class="lessons">
+        <button class="lesson" data-lesson type="button" onclick="openOAP()">
             ОАП
         </button>
-        <button class="lesson" id="kit" type="button" onclick="openIT()">
+        <button class="lesson" data-lesson id="kit" type="button" onclick="openIT()">
             ИТ
         </button>
-        <button class="lesson" id="cs" type="button" onclick="openCS()">
+        <button class="lesson" data-lesson id="cs" type="button" onclick="openCS()">
             КС
         </button>
-        <button class="lesson" id="ck" type="button" onclick="openCK()">
+        <button class="lesson" data-lesson id="ck" type="button" onclick="openCK()">
             ЦК
         </button>
     </div>
-    <div data-tb class="timetable">
-        <p data-timep class="timetable__title">ищешь расписание, жми</p>&nbsp;
-        <a data-timea class="timetable__subtitle" href="https://polytech-shedule.ru/">сюда</a> 
+    <div data-timetable class="timetable">
+        <p class="timetable__title" data-timetable__title>ищешь расписание, жми</p>&nbsp;
+        <a class="timetable__subtitle" data-timetable__subtitle href="https://polytech-shedule.ru/">сюда</a> 
     </div>
+
+    <button type="button" id="meme-mode-btn" class="meme-mode-btn" data-meme-mode-btn>
+        67 
+   </button>
    </div>
    <script src="js/set-mode.js"></script>
    <script src="js/links.js"></script>
